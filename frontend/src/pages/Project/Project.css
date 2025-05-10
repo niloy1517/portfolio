@@ -1,0 +1,76 @@
+/* 
+
+.project-card::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #df5555;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
+.project-text:hover {
+    opacity: 1;
+    z-index: 1;
+} */
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.project-card:hover .card-text {
+    display: block;
+}
+
+
+/* .card-text {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    
+    
+    background: #101828;
+    z-index: 1;
+    margin-top: -15.6rem;
+    padding-left: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    animation: ani 0.7s linear;
+    display: none;
+} */
+
+.card-text {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    margin-top: -13.5rem;
+    overflow: hidden;
+    background: #101828;
+    z-index: 1;
+    display: none;
+    animation: ani 0.7s linear;
+}
+
+
+@keyframes ani {
+    0% {
+        height: 0;
+        bottom: 0;
+    }
+
+    100%{
+        height: 220px;
+        bottom: 0;
+    }
+}
