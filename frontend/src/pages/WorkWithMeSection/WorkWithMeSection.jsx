@@ -1,5 +1,6 @@
 import React from 'react'
 import { GoArrowRight, GoArrowUp } from "react-icons/go";
+import { Link } from 'react-router-dom';
 
 
 const WorkWithMeSection = () => {
@@ -16,7 +17,9 @@ const WorkWithMeSection = () => {
            <div className='text-[26px] md:text-[40px] font-bold mt-7'>
             <p>Have Any Projects On Minds! <br /> Feel Free To Contact Me.</p>
            </div>
-           <button className='w-22 h-22 md:w-25 md:h-25 bg-[#e13e0f] font-bold rounded-full mt-20 hover:border'>Let's Talk With Me</button>
+           <button className='w-22 h-22 md:w-25 md:h-25 bg-[#e13e0f] font-bold rounded-full mt-20 hover:border'>
+            <Link to={'/contact'}>Let's Talk With Me </Link> 
+            </button>
         </div>
         <button className='w-10 h-10 flex justify-center items-center bg-[#e13e0f] font-extrabold text-[30px] mt-30 ml-[88%] md:ml-[94%] lg:ml-[95%] rounded-full'><GoArrowUp/></button>
     </div>

@@ -19,7 +19,7 @@ const Skill = () => {
             {
                 tech_list.map((item, index) => (
                     item.category === showTech && 
-                    <div key={index} className='w-35 h-45 bg-[#101828] border hover:border-[#e13e0f] rounded-[7px] cursor-pointer flex flex-col justify-center items-center'>
+                    <div key={index} className='w-35 h-40 bg-[#101828] border hover:bg-[#101828]/30 rounded-[7px] cursor-pointer flex flex-col justify-center items-center'>
                         <img className='w-20 h-20' src={item.logo} alt="" />
                         <p className='pt-4 text-[15px]'>{item.name}</p>
                     </div>

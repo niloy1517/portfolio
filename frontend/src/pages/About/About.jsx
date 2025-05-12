@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -16,8 +17,12 @@ const About = () => {
                 </div>     
             </div>
             <div className='flex space-x-8 md:space-y-14 justify-center mt-15'>
-                <button className='lg:ml-70 w-36 h-12 px-6 py-2 rounded-[7px] border-2 border-[#e13e0f] hover:bg-[#e13e0f] hover:border-white cursor-pointer'>Read More</button>
-                <button className='w-36 h-12 px-6 py-2 rounded-[7px] border-2 border-[#e13e0f] hover:bg-[#e13e0f] hover:border-white cursor-pointer'>Hire Me</button>
+                <button className='lg:ml-70 w-36 h-12 px-6 py-2 rounded-[7px] border-2 border-[#e13e0f] hover:bg-[#e13e0f] hover:border-white cursor-pointer'>
+                  <Link to={'/readMore'}>Read More</Link>
+                </button>
+                <button className='w-36 h-12 px-6 py-2 rounded-[7px] border-2 border-[#e13e0f] hover:bg-[#e13e0f] hover:border-white cursor-pointer'>
+                  <Link to={'/contact'}>Hire Me</Link>
+                </button>
             </div>
         </div>
     </div>

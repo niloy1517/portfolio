@@ -17,29 +17,29 @@ const Navbar = () => {
             </div>
             <nav className='hidden md:block'>
                 <ul className='flex space-x-8 lg:space-x-12'>
-                    <li onClick={() => setActiveLink('home')} className={activeLink === 'home' ? 'active' : ''}><a href='#home'>Home</a></li>
-                    <li onClick={() => setActiveLink('about')} className={activeLink === 'about' ? 'active' : ''}><a href='#about'>About</a></li>
-                    <li onClick={() => setActiveLink('skill')} className={activeLink === 'skill' ? 'active' : ''}><a href='#skill'>Skill</a></li>
-                    <li onClick={() => setActiveLink('service')} className={activeLink === 'service' ? 'active' : ''}><a href='#service'>Service</a></li>
-                    <li onClick={() => setActiveLink('project')} className={activeLink === 'project' ? 'active' : ''}><a href='#project'>Project</a></li>
+                    <li onClick={() => setActiveLink('home')} className={activeLink === 'home' ? 'active' : ''}><Link to='/#home'>Home</Link></li>
+                    <li onClick={() => setActiveLink('about')} className={activeLink === 'about' ? 'active' : ''}><Link to='/#about'>About</Link></li>
+                    <li onClick={() => setActiveLink('skill')} className={activeLink === 'skill' ? 'active' : ''}><Link to='/#skill'>Skill</Link></li>
+                    <li onClick={() => setActiveLink('service')} className={activeLink === 'service' ? 'active' : ''}><Link to='/#service'>Service</Link></li>
+                    <li onClick={() => setActiveLink('project')} className={activeLink === 'project' ? 'active' : ''}><Link to='/#project'>Project</Link></li>
                 </ul>
             </nav>
             {
                 menu &&
                 <nav className='w-[100%] absolute mt-[18rem] h-[260px] z-10'>
                     <ul className='mobile-menu flex flex-col absolute w-full h-[240px] mt-[1.5rem] bg-gray-800/80'>
-                        <li onClick={() => {setActiveLink('home'), setMenu(false)}} className={activeLink === 'home' ? 'menu' : ''}><a href='#home'>Home</a></li>
-                        <li onClick={() => {setActiveLink('about'), setMenu(false)}} className={activeLink === 'about' ? 'menu' : ''}><a href='#about'>About</a></li>
-                        <li onClick={() => {setActiveLink('skill'), setMenu(false)}} className={activeLink === 'skill' ? 'menu' : ''}><a href='#skill'>Skill</a></li>
-                        <li onClick={() => {setActiveLink('service'), setMenu(false)}} className={activeLink === 'service' ? 'menu' : ''}><a href='#service'>Service</a></li>
-                        <li onClick={() => {setActiveLink('project'), setMenu(false)}} className={activeLink === 'project' ? 'menu' : ''}><a href='#project'>Project</a></li>
+                        <li onClick={() => {setActiveLink('home'), setMenu(false)}} className={activeLink === 'home' ? 'menu' : ''}><Link to='/#home'>Home</Link></li>
+                        <li onClick={() => {setActiveLink('about'), setMenu(false)}} className={activeLink === 'about' ? 'menu' : ''}><Link to='/#about'>About</Link></li>
+                        <li onClick={() => {setActiveLink('skill'), setMenu(false)}} className={activeLink === 'skill' ? 'menu' : ''}><Link to='/#skill'>Skill</Link></li>
+                        <li onClick={() => {setActiveLink('service'), setMenu(false)}} className={activeLink === 'service' ? 'menu' : ''}><Link to='/#service'>Service</Link></li>
+                        <li onClick={() => {setActiveLink('project'), setMenu(false)}} className={activeLink === 'project' ? 'menu' : ''}><Link to='/#project'>Project</Link></li>
                     </ul>
                 </nav>
             }
             <div className='hidden md:block'>
-               <a href="#contact" className='px-4 py-1.5 rounded-[25px] font-medium' style={{
+               <Link to="/contact" className='px-4 py-1.5 rounded-[25px] font-medium' style={{
                  background: 'linear-gradient(135deg, #e13e0f, #e04503, #fa5f05)'
-               }}>Contact Me</a>
+               }}>Contact Me</Link>
             </div>
             <div className='md:hidden px-15'>
                 <button className='text-2xl cursor-pointer' onClick={() => setMenu(!menu)}>

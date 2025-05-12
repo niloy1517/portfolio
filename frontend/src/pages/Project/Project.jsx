@@ -18,7 +18,7 @@ const Project = () => {
         <div className='flex flex-wrap justify-center gap-10 md:gap-6 items-center'>
           {
             projects.slice(0, defualtProject).map((project, index) => (
-              <div key={index} className='project-card w-[350px] lg:w-[390px] h-[280px] shrink-0 rounded-[10px]'>
+              <div key={index} className='project-card w-[350px] lg:w-[390px] h-[280px] shrink-0 rounded-[10px] hover:border-2'>
                 <img className='w-full h-[280px] z-0' src={project.image} alt="" />
                 <div className='card-text px-4'>
                   <div className='flex flex-wrap gap-1.5 mt-4'>
@@ -31,11 +31,11 @@ const Project = () => {
                   <p className='pt-5 font-bold pb-2'>{project.name}</p>
                   <p>{project.description}</p>
                   <div className='flex space-x-8 pt-4 text-[14px]'>
-                    <button className='flex space-x-1 items-center bg-blue-700 px-2 py-1 rounded-[10px]'>
+                    <button className='flex space-x-1 items-center bg-green-600 px-2 py-1 rounded-[10px]'>
                       <span>Live Link</span> 
                       <FaExternalLinkAlt /> 
                     </button>
-                    <button className='flex space-x-1 items-center bg-[#1d2b55] px-2 py-1 rounded-[10px]'> 
+                    <button className='flex space-x-1 items-center bg-blue-700 px-2 py-1 rounded-[10px]'> 
                       <span>Source Code</span> 
                       <FaCode className='text-[20px] font-bold' /> 
                     </button>
@@ -56,10 +56,3 @@ const Project = () => {
 
 export default Project
 
-
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/niloy1517/portfolio.git
-git push -u origin main
