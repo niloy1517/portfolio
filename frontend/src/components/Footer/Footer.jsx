@@ -8,7 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className='bg-[#101828] text-white'>
-      <div className='ml-6 md:ml-0 md:flex md:flex-row md:justify-between md:mx-5 lg:mx-10'>
+      <div className='ml-6 md:ml-0 md:flex md:flex-row md:justify-around lg:mx-10'>
         <div className='pt-10'>
           <div className='flex items-center text-center space-x-0.5'>
             <p className='text-[25px] font-bold w-10 h-10 rounded-full bg-[#e13e0f]'>N</p>

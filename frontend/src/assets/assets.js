@@ -1,6 +1,7 @@
 import picture from './man.webp'
 import hero_picture from './developer.png'
 import hero from './developer-programmer.png'
+import about_pic from './man-working.png'
 
 
 
@@ -36,6 +37,7 @@ export const assets = {
     picture,
     hero_picture,
     hero,
+    about_pic,
 }
 
 
