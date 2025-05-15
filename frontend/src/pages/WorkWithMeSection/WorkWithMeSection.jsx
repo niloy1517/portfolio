@@ -21,7 +21,7 @@ const WorkWithMeSection = () => {
             <Link to={'/contact'}>Let's Talk With Me </Link> 
             </button>
         </div>
-        <button className='w-10 h-10 flex justify-center items-center bg-[#e13e0f] font-extrabold text-[30px] mt-30 ml-[88%] md:ml-[94%] lg:ml-[95%] rounded-full'><GoArrowUp/></button>
+        <button className='w-10 h-10 flex justify-center items-center bg-[#e13e0f] font-extrabold text-[30px] mt-30 ml-[86%] md:ml-[94%] lg:ml-[95%] rounded-full'><GoArrowUp/></button>
     </div>
   )
 }

@@ -7,7 +7,7 @@ import { assets } from '../../assets/assets';
 
 const Hero = () => {
   return (
-    <div className='h-auto pb-20 bg-[rgb(3,7,19)] text-white'>
+    <div className='min-h-screen pb-20 bg-[rgb(3,7,19)] text-white'>
         <div className='flex flex-col lg:flex-row-reverse md:justify-between md:items-center'>
             <div className='mx-auto mt-6 lg:flex-1/2 md:absolute'>
                 <img className='w-[300px] md:w-[450px] lg:w-[490px] md:ml-0 h-auto opacity-10 md:opacity-15 lg:opacity-20' src={assets.hero} alt="" />

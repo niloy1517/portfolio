@@ -1,0 +1,9 @@
+.frontend-text span {
+    color: rgb(9, 111, 243);
+    font-weight: 500;
+}
+
+.backend-text span {
+    color: rgb(4, 177, 4);
+    font-weight: 500;
+}

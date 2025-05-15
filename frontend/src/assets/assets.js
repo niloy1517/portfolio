@@ -78,10 +78,7 @@ export const projects = [
     demo: [
       "React.js",
       "Tailwind CSS",
-      "Express.js",
-      "Node.js",
-      "MongoDB",
-      "Firebase"
+      "Express.js"
     ]
   },
   { 

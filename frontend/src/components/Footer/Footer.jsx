@@ -32,7 +32,7 @@ const Footer = () => {
             <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#home">Home</a></li>
             <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#about">About</a></li>
             <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#skill">Skill</a></li>
-            <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#service">Service</a></li>
+            {/* <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#service">Service</a></li> */}
             <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#project">Project</a></li>
           </ul>
         </div>

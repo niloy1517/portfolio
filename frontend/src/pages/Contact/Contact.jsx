@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className='min-h-screen bg-[rgb(3,7,19)] pb-40 text-white'>
       <h1 className='text-center font-bold text-[35px] pt-10 text-[#e13e0f]'>Get In Touch</h1>
-      <p className='text-center text-[18px] pt-3 pb-20'>I'll try to respond as soon as possible. Looking forward to connecting!</p>
+      <p className='text-center text-[18px] pt-3 pb-20 mx-1.5'>I'll try to respond as soon as possible. Looking forward to connecting!</p>
       <div className='flex flex-col-reverse md:flex-row justify-around'>
         <div className='flex flex-col justify-center text-center items-center'>
           <p className='text-[25px] pt-20 md:pt-0 font-bold pb-10 text-[#0072c6]'>Contact Info</p>
