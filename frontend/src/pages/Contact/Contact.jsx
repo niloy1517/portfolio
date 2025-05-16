@@ -7,7 +7,7 @@ import { IoMdMail } from "react-icons/io";
 const Contact = () => {
   return (
     <div className='min-h-screen bg-[rgb(3,7,19)] pb-40 text-white'>
-      <h1 className='text-center font-bold text-[35px] pt-10 text-[#e13e0f]'>Get In Touch</h1>
+      <h1 className='text-center font-bold text-[35px] pt-10'>Get In <span className='text-[#03ABEE]'>Touch</span></h1>
       <p className='text-center text-[18px] pt-3 pb-20 mx-1.5'>I'll try to respond as soon as possible. Looking forward to connecting!</p>
       <div className='flex flex-col-reverse md:flex-row justify-around'>
         <div className='flex flex-col justify-center text-center items-center'>

@@ -6,15 +6,21 @@ const Skill = () => {
     const [showTech, setShowTect] = useState('Frontend')
     
   return (
-    <div className='bg-[rgb(3,7,19)] text-white py-20'>
-        <h1 className='text-center text-[40px] font-bold mb-8 text-[#e13e0f]'>My Skills</h1>
-        <p className='text-center md:text-[18px] mx-6 md:mx-[6rem] lg:mx-[17rem] mb-20'>"Here are the technologies and tools I use to build responsive and scalable web applications."</p>
-        <div className='w-[90%] text-[14px] md:text-[16px] md:w-[65%] lg:w-[60%] flex flex-wrap justify-center px-4 space-x-6 md:space-x-10 font-medium bg-[#e13e0f] py-2 mx-auto rounded-[7px]'>
+    <div className='min-h-screen bg-[rgb(3,7,19)] text-white py-30'>
+        <h1 className='font-pri text-center text-[40px] font-bold mb-8'>
+            My <span className='text-[#03ABEE]'>Skills</span>
+        </h1>
+        <p className='font-sec text-center md:text-[18px] mx-6 md:mx-[6rem] lg:mx-[17rem] mb-20'>
+            "Here are the technologies and tools I use to build responsive and scalable web applications."
+        </p>
+        {/* Navigate Button */}
+        <div className='w-[90%] text-[14px] md:text-[16px] md:w-[65%] lg:w-[60%] flex flex-wrap justify-center px-4 space-x-6 md:space-x-10 font-medium bg-[#03ABEE] py-2 mx-auto rounded-[7px]'>
             <button onClick={() => setShowTect('Frontend')} className={showTech === 'Frontend' ? 'active-tech' : ''}>Frontend</button>
             <button onClick={() => setShowTect('Backend')} className={showTech === 'Backend' ? 'active-tech' : ''}>Backend</button>
             <button onClick={() => setShowTect('Tools')} className={showTech === 'Tools' ? 'active-tech' : ''}>Tools</button>
             <button onClick={() => setShowTect('Soft skill')} className={showTech === 'Soft skill' ? 'active-tech' : ''}>Soft Skill</button>
         </div>
+        {/* Show Skill Tech */}
         <div className='w-[70%] md:w-[58%] lg:w-[50%] mt-10 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5'>
             {
                 tech_list.map((item, index) => (

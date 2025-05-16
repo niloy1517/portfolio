@@ -1,3 +1,25 @@
 .about-text span {
-  color: #e13e0f;
+  color: #03ABEE;
 }
+
+
+.image-box {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+
+}
+
+.image-box::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  z-index: -1;
+  background: #282F3E;
+  top: 40px;
+  border-radius: 10px;
+  border: #03ABEE 1px solid;
+}
+
+

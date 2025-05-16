@@ -10,10 +10,15 @@ const Project = () => {
   
   
   return (
-    <div className='bg-[rgb(3,7,19)] text-white py-20'>
+    <div className=' bg-[rgb(3,7,19)] text-white py-30'>
       <div>
-        <h1 className='text-center text-[45px] font-bold text-[#e13e0f] mb-10'>My Work</h1>
-        <p className='text-center mb-15'>Welcome to my development portfolio! Explore a collection of project showcasing my expertise in full-stack development.</p>
+        <h1 className='font-pri text-center text-[40px] font-bold mb-10'>
+          My <span className='text-[#03ABEE]'>Work</span>
+        </h1>
+        <p className='font-sec text-center mb-15'>
+          Welcome to my development portfolio! Explore a collection of project showcasing my expertise in full-stack development.
+        </p>
+        {/* Show Project */}
         <div className='grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3 justify-items-start'>
           {
             projects.slice(0, defualtProject).map((project, index) => (
@@ -29,7 +34,7 @@ const Project = () => {
                   </div>
                   <p className='pt-3 text-[18px] font-bold pb-2'>{project.name}</p>
                   <p>{project.description}</p>
-                  <div className='flex space-x-8 pt-4 mb-3 text-[14px]'>
+                  <div className='flex space-x-8 pt-4 mb-5 text-[14px]'>
                     <button className='flex space-x-1 items-center bg-green-600 px-2 py-1 rounded-[10px]'>
                       <span>Live Link</span> 
                       <FaExternalLinkAlt /> 
@@ -46,7 +51,7 @@ const Project = () => {
         </div>
         {
           projects.length > 3 && 
-          <button className='flex mx-auto px-4 py-2 bg-[#e13e0f] hover:border rounded-[10px] mt-20'>View More Projects</button>
+          <button className='flex mx-auto px-4 py-2 border-2 border-[#03ABEE] hover:border rounded-[10px] mt-20 hover:bg-[#03ABEE]'>View More Projects</button>
         }
       </div>
     </div>

@@ -11,8 +11,8 @@ const Footer = () => {
       <div className='ml-6 md:ml-0 md:flex md:flex-row md:justify-around lg:mx-10'>
         <div className='pt-10'>
           <div className='flex items-center text-center space-x-0.5'>
-            <p className='text-[25px] font-bold w-10 h-10 rounded-full bg-[#e13e0f]'>N</p>
-            <p className='text-[22px] font-bold text-[#e13e0f]'>iloy.dev</p>
+            <p className='text-[25px] font-bold w-10 h-10 rounded-full bg-[#03ABEE]'>N</p>
+            <p className='text-[22px] font-bold text-[#03ABEE]'>iloy.dev</p>
           </div>
           <div className='flex items-center space-x-1 pt-4 md:pt-6'>
             <IoMdMail className='text-[20px]' />
@@ -29,20 +29,20 @@ const Footer = () => {
             <p>Quick Links</p>
           </div>
           <ul className='flex gap-4 pt-4 md:pt-6'>
-            <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#home">Home</a></li>
-            <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#about">About</a></li>
-            <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#skill">Skill</a></li>
+            <li className='hover:font-medium hover:text-[#03ABEE]'><a href="#home">Home</a></li>
+            <li className='hover:font-medium hover:text-[#03ABEE]'><a href="#about">About</a></li>
+            <li className='hover:font-medium hover:text-[#03ABEE]'><a href="#skill">Skill</a></li>
             {/* <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#service">Service</a></li> */}
-            <li className='hover:font-medium hover:text-[#e13e0f]'><a href="#project">Project</a></li>
+            <li className='hover:font-medium hover:text-[#03ABEE]'><a href="#project">Project</a></li>
           </ul>
         </div>
         <div className='mt-10'>
           <p className='text-[18px]'>Connect With Me</p>
           <div className='flex items-center space-x-3 md:space-x-4 pt-4 md:pt-6'>
-            <a href="#"><TiSocialFacebook className='text-[35px] hover:text-[#e13e0f] cursor-pointer' /></a>
-            <a href=""><TiSocialLinkedin className='text-[38px] hover:text-[#e13e0f] cursor-pointer' /></a>
-            <a href=""><TiSocialTwitter className='text-[35px] hover:text-[#e13e0f] cursor-pointer' /></a>
-            <a href=""><FaGithub className='text-[25px] hover:text-[#e13e0f] cursor-pointer' /></a>
+            <a href="#"><TiSocialFacebook className='social-icon text-[35px] hover:text-[#03ABEE] cursor-pointer' /></a>
+            <a href=""><TiSocialLinkedin className='social-icon text-[38px] hover:text-[#03ABEE] cursor-pointer' /></a>
+            <a href=""><TiSocialTwitter className='social-icon text-[35px] hover:text-[#03ABEE] cursor-pointer' /></a>
+            <a href=""><FaGithub className='social-icon text-[25px] hover:text-[#03ABEE] cursor-pointer' /></a>
           </div>
         </div>
       </div>

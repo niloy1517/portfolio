@@ -2,4 +2,7 @@
 
 
 
-  
+  @theme {
+  --font-pri: "Poppins", serif;
+  --font-sec: "Roboto", sans-serif;
+}

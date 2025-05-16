@@ -9,11 +9,11 @@ const Navbar = () => {
     const [menu, setMenu] = useState(false)
     const [activeLink, setActiveLink] = useState('home')
   return (
-    <div className='w-full bg-[#030713] text-white top-0 sticky z-10'>
-        <div className='flex justify-around md:justify-between items-center lg:text-center lg:px-15 md:mx-7 py-5 border-b-1 border-[#e13e0f]'>
+    <div className='w-full bg-[#030713] text-white top-0 sticky z-20'>
+        <div className='flex justify-around md:justify-between items-center lg:text-center lg:px-15 md:mx-7 py-5 border-b-1 border-[#03ABEE]'>
             <div className='flex items-center text-center space-x-0.5'>
-                <p className='text-[25px] font-bold w-10 h-10 rounded-full bg-[#e13e0f]'>N</p>
-                <p className='text-[22px] font-bold text-[#e13e0f]'>iloy.dev</p>
+                <p className='text-[25px] font-bold w-10 h-10 rounded-full bg-[#03ABEE]'>N</p>
+                <p className='text-[22px] font-bold text-[#03ABEE]'>iloy.dev</p>
             </div>
             <nav className='hidden md:block'>
                 <ul className='flex space-x-8 lg:space-x-12'>
@@ -37,8 +37,8 @@ const Navbar = () => {
                 </nav>
             }
             <div className='hidden md:block'>
-               <Link to="/contact" className='px-4 py-1.5 rounded-[25px] font-medium' style={{
-                 background: 'linear-gradient(135deg, #e13e0f, #e04503, #fa5f05)'
+               <Link to="/contact" className='px-4 py-1.5 rounded-[25px] font-medium hover:border' style={{
+                 background: 'linear-gradient(135deg, #0558f3, #03ABEE)'
                }}>Contact Me</Link>
             </div>
             <div className='md:hidden'>
