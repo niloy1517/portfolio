@@ -9,8 +9,7 @@ import html_logo from './html_logo.svg'
 import css3_logo from './css3_logo.svg'
 import javascript_logo from './javascript_logo.svg'
 import react_logo from './react-logo.svg'
-import tailwind_css_logo from './tailwind_css_logo.svg'
-
+import tailwindcss_logo from './Tailwind_CSS_Logo.svg'
 import bootstrap_logo from './bootstrap_logo.svg'
 import nodejs_logo from './nodejs-logo.svg'
 import expressjs_logo from './expressjs-logo.svg'
@@ -48,7 +47,7 @@ export const tech_list = [
   {name: 'CSS', logo: css3_logo, category: 'Frontend'},
   {name: 'JAVASCRIPT', logo: javascript_logo, category: 'Frontend'},
   {name: 'REACT.JS', logo: react_logo, category: 'Frontend'},
-  {name: 'TAILWIND CSS', logo: tailwind_css_logo, category: 'Frontend'},
+  {name: 'TAILWIND CSS', logo: tailwindcss_logo, category: 'Frontend'},
   {name: 'BOOTSTRAP', logo: bootstrap_logo, category: 'Frontend'},
   {name: 'NODE.JS', logo: nodejs_logo, category: 'Backend'},
   {name: 'EXPRESS.JS', logo: expressjs_logo, category: 'Backend'},
