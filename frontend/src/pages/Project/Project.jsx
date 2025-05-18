@@ -49,10 +49,10 @@ const Project = () => {
             ))
           }
         </div>
-        {
+        {/* {
           projects.length > 3 && 
           <button className='flex mx-auto px-4 py-2 border-2 border-[#03ABEE] hover:border rounded-[10px] mt-20 hover:bg-[#03ABEE]'>View More Projects</button>
-        }
+        } */}
       </div>
     </div>
   )
