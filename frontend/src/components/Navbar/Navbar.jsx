@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
@@ -8,6 +8,21 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [menu, setMenu] = useState(false)
     const [activeLink, setActiveLink] = useState('home')
+
+    // Assuming 768px is the breakpoint for desktop
+    useEffect(() => {
+        const handleResize = () => {
+            if(window.innerWidth >= 768) {
+                setMenu(false)
+            }
+
+            window.addEventListener('resize', handleResize)
+
+            return () => {
+                window.removeEventListener('resize', handleResize)
+            }
+        }
+    }, [])
   return (
     <div className='w-full bg-[#030713] text-white top-0 sticky z-20'>
         <div className='flex justify-around md:justify-between items-center lg:text-center lg:px-15 md:mx-7 py-5 border-b-1 border-[#03ABEE]'>
